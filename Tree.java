@@ -1,4 +1,4 @@
-class Tree {
+private class Tree {
 
   {
     String treeName;
@@ -23,49 +23,57 @@ class Tree {
     leafColor = aLeafColor;
   }
 
-  setName(){
+  public void setName(String theName){
+    this.name = theName;
+  }
+
+  public void setType(String theType){
+    this.name = theType;
+  }
+
+  public void setFall(boolean theFall){
+    this.name = theFall;
 
   }
 
-  setType(){
-
+  public void setColor(String theColor){
+    this.name = theColor;
   }
 
-  setFall(){
-
+  public String getName(){
+    return tName;
   }
 
-  setColor(){
-
+  public String getType(){
+    return tType;
   }
 
-  getName(){
-
+  public String getFall(){
+    return tFall;
   }
 
-  getType(){
-
+  public String getColor(){
+    return tColor;
   }
 
-  getFall(){
-
-  }
-
-  getColor()
+  String print()
   {
-
+    System.out.println("This is a " + getName.theName + ". It is a " + getType.theType + " and it's leaves are currently " + getColor.theColor + ". It " + (getFall.theFall == true ? "does" : "does not") + " lose it's leaves in the winter.");
   }
-
-
-
-
-
-
-
-
-
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
   
