@@ -1,63 +1,65 @@
+import java.awt.print.Printable;
+
 class Tree {
 
-  {
-    String treeName;
-    String treeType;
-    boolean leavesFall;
-    String leafColor;
-  }
-
+  private String treeName;
+  private String treeType;
+  private boolean leavesFall;
+  private String leafColor;
+  
   Tree() {
-    treeName = "";
-    treeType = "";
+    treeName = " ";
+    treeType = " ";
     leavesFall = false;
-    leafColor = "";
+    leafColor = " ";
   }
 
   Tree(String aTreeName, String aTreeType, boolean aLeavesFall, String aLeafColor) {
-    treeName = aTreeName;
-    treeType = aTreeType;
-    leavesFall = aLeavesFall;
-    leafColor = aLeafColor;
+      treeName = aTreeName;
+      treeType = aTreeType;
+      leavesFall = aLeavesFall;
+      leafColor = aLeafColor;
+    }
+
+     void setName(String aTreeName) {
+      treeName = aTreeName;
+    }
+
+    void setType(String aTreeType) {
+      treeType = aTreeType;
+    }
+
+    void setFall(boolean aLeavesFall) {
+      leavesFall = aLeavesFall;
+    }
+    void setColor(String aLeafColor) {
+      leafColor = aLeafColor;
+    }
+
+    String getName() {
+      return treeName;
+    }
+
+    String getType() {
+      return treeType;
+    }
+
+    boolean getFall() {
+      return leavesFall;
+    }
+
+    String getColor() {
+      return leafColor;
+    }
+
+static void display() {
+      if(aleavesFall == true){
+        System.out.println("This is a " aTreeName.getName() + " tree. It is a " aTreeType.getType() + " and its leaves are currently " + aTreeColor.getColor() + ". It does lose its leaves in the winter.");
+      }
+      else{
+        System.out.println("This is a " aTreeName.getName() + " tree. It is a " aTreeType.getType() + " and its leaves are currently " + aTreeColor.getColor() + ". It does NOT lose its leaves in the winter.");
+      }
+    } 
+
   }
 
-  public void setName(String aTreeName) {
-    name = treeName;
-  }
-
-  public void setType(String aTreeType) {
-    name = treeType;
-  }
-
-  public void setFall(boolean aLeavesFall) {
-    name = leavesFall;
-
-  }
-
-  public void setColor(String aLeafColor) {
-    name = leafColor;
-  }
-
-  public String getName() {
-    return treeName;
-  }
-
-  public String getType() {
-    return treeType;
-  }
-
-  public String getFall() {
-    return leavesFall;
-  }
-
-  public String getColor() {
-    return leafColor;
-  }
-
-  String print() {
-    System.out.println("This is a " + getName.treeName + ". It is a " + getType.treeType
-        + " and it's leaves are currently " + getColor.leafColor + ". It "
-        + (getFall.leavesFall == true ? "does" : "does not") + " lose it's leaves in the winter.");
-  }
-
-}
