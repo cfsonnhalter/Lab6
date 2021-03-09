@@ -56,7 +56,7 @@ class Tree {
   }
 
   public String display() {
-    if (Tree.getFall == true) {
+    if (aLeavesFall == true) {
       return "This is a " + Tree.getName() + " tree. It is a " + Tree.getType() + " and its leaves are currently " + Tree.getColor() + ". It does lose its leaves in the winter.";
     } else {
       return "This is a " + Tree.getName() + " tree. It is a " + Tree.getType() + " and its leave are currently " + Tree.getColor() + ". It does NOT lose its leaves in the winter.";
